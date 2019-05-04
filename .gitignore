@@ -4,6 +4,7 @@ build/
 /.gradle/
 /out/
 /classes/
+/bin/
 
 ### STS ###
 .apt_generated

@@ -1,3 +1,8 @@
+# はじめに
+本レポジトリは、https://github.com/tokuhirom/spring-vue-sample のForkレポジトリ。  
+Gradleバージョンアップ（2019年5月現在：Ver.5）や、SpringBootバージョンアップ（同：Ver.2.x）に修正し、さらにVue.js学習用にいろいろ追加。  
+「目的」以降は、Fork元のレポジトリ元の文章になります。
+
 # 目的
 
 サーバーサイドエンジニアが気軽に vue.js + spring-boot で SPA 開発するためにはどうしたらいいか、という話。
