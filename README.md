@@ -1,7 +1,17 @@
 # はじめに
 本レポジトリは、https://github.com/tokuhirom/spring-vue-sample のForkレポジトリ。  
-Gradleバージョンアップ（2019年5月現在：Ver.5）や、SpringBootバージョンアップ（同：Ver.2.x）に修正し、さらにVue.js学習用にいろいろ追加。  
-「目的」以降は、Fork元のレポジトリ元の文章になります。
+
+
+# Fork元との差分
+* Gradleバージョンアップ（2019年5月現在：Ver.5）
+* SpringBootバージョンアップ（同：Ver.2.x）
+* src/main/resource配下の監視・即時反映用にbuild.gradle、webpack.config.jsを修正。
+* Vue.js学習用にいろいろ追加。  
+
+
+## 備考
+
+下記「目的」以降は、Fork元のレポジトリ元の文章になります。
 
 # 目的
 

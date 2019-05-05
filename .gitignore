@@ -5,6 +5,7 @@ build/
 /out/
 /classes/
 /bin/
+/src/main/resources/static/
 
 ### STS ###
 .apt_generated

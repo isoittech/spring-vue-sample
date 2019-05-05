@@ -6,7 +6,9 @@ module.exports = {
     entry: './src/main/js/app.js',
     output: {
         filename: 'js/bundle.js',
-        path: __dirname + '/build/resources/main/static'
+        // path: __dirname + '/build/resources/main/static'
+        // build.gradleにて、src/main/resourcesがHOTリロードされるように設定しているので、ビルドjsもそこに乗っける。
+        path: __dirname + '/src/main/resources/static'
     },
     module: {
         loaders: [

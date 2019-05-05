@@ -46,15 +46,25 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-freemarker'
+    //implementation 'org.springframework.boot:spring-boot-starter-freemarker'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-data-redis'
 
 	compileOnly 'org.projectlombok:lombok'
-	runtimeOnly 'org.springframework.boot:spring-boot-devtools'
+	compile 'org.springframework.boot:spring-boot-devtools'
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude(module: 'commons-logging')
     }
+}
+
+bootRun {
+    // HTML・Javascript・CSS・その他リソースが更新された時に自動リロードする設定
+    // ※src/main/resourcesが対象になる
+    // ※webpack.config.js内の設定で、vueファイルが更新されたらwebpackによりsrc/main/resourcesにbundle.jsとしてビルドされるようになっている。
+    sourceResources sourceSets.main
+    // デバッグ実行時は下記を有効化する。
+    //jvmArgs=["-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005"]
 }
 
 task webpack(type: NodeTask, dependsOn: 'npmInstall') {
