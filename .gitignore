@@ -5,7 +5,8 @@ build/
 /out/
 /classes/
 /bin/
-/src/main/resources/static/
+/src/main/resources/static/*
+!/src/main/resources/static/vuetraining/
 
 ### STS ###
 .apt_generated
