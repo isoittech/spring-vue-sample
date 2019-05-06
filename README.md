@@ -1,5 +1,5 @@
 # はじめに
-本レポジトリは、https://github.com/tokuhirom/spring-vue-sample のForkレポジトリ。  
+本リポジトリは、https://github.com/tokuhirom/spring-vue-sample のForkリポジトリ。  
 
 
 # Fork元との差分
@@ -8,8 +8,22 @@
 * src/main/resource配下の監視・即時反映用にbuild.gradle、webpack.config.jsを修正。
 * Vue.js学習用にいろいろ追加。  
 
+# 開発フロー
 
-## 備考
+1. 事前準備として、` npm run dev ` を実行し、webpack -w を実行させておく。  
+→効果として、vue等のファイルがビルドされ、bundle.jsが出力される。
+
+1. 事前準備2として、` gradle bootRun ` を実行し、SpringBootアプリを起動しておく。
+
+1. vue等新規追加、更新する。
+
+1. ブラウザで確認する。
+
+
+3,4を繰り返す。
+
+
+# 備考
 
 下記「目的」以降は、Fork元のレポジトリ元の文章になります。
 
