@@ -5,13 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/vuetraining")
+@RequestMapping("/kisokaravue")
 public class VueTrainingController {
 	@GetMapping("/")
-	public String vuetraining() {
+	public String kisokaravue() {
 		// 下記URLでアクセスする。
-		// http://localhost:5000/vuetraining/#/
+		// http://localhost:5000/kisokaravue/#/
 		System.out.println("asda2245678987654");
-		return "vuetraining/index";
+		return "kisokaravue/index";
 	}
 }

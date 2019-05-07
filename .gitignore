@@ -6,7 +6,7 @@ build/
 /classes/
 /bin/
 /src/main/resources/static/*
-!/src/main/resources/static/vuetraining/
+!/src/main/resources/static/kisokaravue/
 
 ### STS ###
 .apt_generated
