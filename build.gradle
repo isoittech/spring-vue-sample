@@ -63,8 +63,9 @@ bootRun {
     // ※src/main/resourcesが対象になる
     // ※webpack.config.js内の設定で、vueファイルが更新されたらwebpackによりsrc/main/resourcesにbundle.jsとしてビルドされるようになっている。
     sourceResources sourceSets.main
-    // デバッグ実行時は下記を有効化する。
-    //jvmArgs=["-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005"]
+    // デバッグ実行時またはJavaソースの自動リロードは下記を有効化する。
+    // 有効化した場合は、デバッグの構成-リモートJavaアプリケーションからバインド実行する。
+    jvmArgs=["-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005"]
 }
 
 task webpack(type: NodeTask, dependsOn: 'npmInstall') {
