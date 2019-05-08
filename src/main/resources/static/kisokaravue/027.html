@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Vue.js App</title>
+<link href="/css/main.css" rel="stylesheet">
+</head>
+<body>
+	<div id="app027">
+		<h2>コンポーネントのニッチ？な機能・オプション</h2>
+		<h4>keep-alive</h4>
+
+		<button v-on:click="current='comp-board'">メッセージ一覧</button>
+		<button v-on:click="current='comp-form'">投稿フォーム</button>
+		<keep-alive>
+		<div v-bind:is="current"></div>
+		</keep-alive>
+
+
+		<h2>data全体の状態</h2>
+		<pre>{{ $data }}</pre>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+	<script src="/js/main.js"></script>
+</body>
+</html>
