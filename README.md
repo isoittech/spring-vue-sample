@@ -25,6 +25,8 @@
 
 # 備考
 
+https://qiita.com/euledge/items/7ae16dbe3cf823328de0  
+「サーバーサイドエンジニアが気軽に vue.js + spring-boot で SPA 開発するために」上記サイトも参考になる。  
 下記「目的」以降は、Fork元のレポジトリ元の文章になります。
 
 # 目的
